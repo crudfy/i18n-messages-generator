@@ -8,4 +8,13 @@ i18n-messages-generator
 
 Generate i18n messages from lang folder
 
-# Features
+## Install
+```sh
+yarn add i18n-messages-generator
+```
+Or
+```sh
+npm install i18n-messages-generator
+```
+
+## How to use it

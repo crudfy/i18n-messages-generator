@@ -1,20 +1,20 @@
 export interface IData {
   [key: string]: any
 }
-function addFileTranslations(parts: any, langs: any, data: any) {
+function addFileTranslations(parts: any, messages: any, data: any) {
   parts.forEach((key: string, i: number) => {
-    if (!langs[key]) {
-      langs[key] = {}
+    if (!messages[key]) {
+      messages[key] = {}
       if (parts.length === 1) {
-        langs[key] = data
+        messages[key] = data
       }
     }
     parts.splice(i, 1)
-    addFileTranslations(parts, langs[key], data)
+    addFileTranslations(parts, messages[key], data)
   })
 }
-export function buildLangFile(requireLangFile: any) {
-  const langs: IData = {}
+export function buildLangFiles(requireLangFile: any) {
+  const messages: IData = {}
   requireLangFile
       .keys()
       .filter((it: string) => {
@@ -30,9 +30,9 @@ export function buildLangFile(requireLangFile: any) {
           return it.replace('.js', '').replace('.ts', '')
         })
 
-        addFileTranslations(filenameParts, langs, langFile)
+        addFileTranslations(filenameParts, messages, langFile)
 
       })
 
-  return langs
+  return messages
 }

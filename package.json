@@ -1,16 +1,17 @@
 {
-  "name": "typescript-npm-package-starter",
+  "name": "i18n-messages-generator",
   "version": "1.0.0",
-  "description": "Boilerplate project to create npm package in typescript",
+  "description": "i18n messages generator from languages files",
   "main": "dist/index.js",
+  "keywords": ["18n"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/timreynolds/typescript-npm-package-starter.git"
+    "url": "https://github.com/crudfy/i18n-messages-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/timreynolds/typescript-npm-package-starter/issues"
+    "url": "https://github.com/crudfy/i18n-messages-generator/issues"
   },
-  "homepage": "https://github.com/timreynolds/typescript-npm-package-starter",
+  "homepage": "https://github.com/crudfy/i18n-messages-generator",
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && tsc",

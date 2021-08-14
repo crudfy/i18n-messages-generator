@@ -1,11 +1,6 @@
 i18n-messages-generator
 =========================
 
-[![devDependency Status](https://david-dm.org/timreynolds/typescript-npm-package-starter/dev-status.svg)](https://david-dm.org/timreynolds/typescript-npm-package-starter#info=devDependencies)
-[![Build Status](https://travis-ci.org/timReynolds/typescript-npm-package-starter.svg?branch=master)](https://travis-ci.org/timReynolds/typescript-npm-package-starter)
-[![Maintainability](https://api.codeclimate.com/v1/badges/99ef9fd41a78d421248e/maintainability)](https://codeclimate.com/github/timReynolds/typescript-npm-package-starter/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/99ef9fd41a78d421248e/test_coverage)](https://codeclimate.com/github/timReynolds/typescript-npm-package-starter/test_coverage)
-
 Generate i18n messages from lang folder
 
 ## Install
@@ -18,3 +13,18 @@ npm install i18n-messages-generator
 ```
 
 ## How to use it
+
+```
+import { buildLangFiles } from 'vue';
+const messages = buildLangFiles('./lang', true, /(.js){0,1}(.ts){0,1}$/i))
+
+const i18n = VueI18n.createI18n({
+  locale: 'ja', // set locale
+  fallbackLocale: 'en', // set fallback locale
+  messages, // set locale messages
+  // If you need to specify other options, you can set other options
+  // ...
+})
+
+
+```

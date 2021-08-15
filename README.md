@@ -14,6 +14,8 @@ npm install i18n-messages-generator
 
 ## How to use it
 
+![Alt text](./src/project-files-example.jpg?raw=true "Project files example")
+
 ```
 import { buildLangFiles } from 'vue';
 const messages = buildLangFiles('./lang', true, /(.js){0,1}(.ts){0,1}$/i))

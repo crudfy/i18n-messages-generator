@@ -21,7 +21,7 @@ import { buildLangFiles } from 'vue';
 const messages = buildLangFiles('./lang', true, /(.js){0,1}(.ts){0,1}$/i))
 
 const i18n = VueI18n.createI18n({
-  locale: 'ja', // set locale
+  locale: 'fr', // set locale
   fallbackLocale: 'en', // set fallback locale
   messages, // set locale messages
   // If you need to specify other options, you can set other options

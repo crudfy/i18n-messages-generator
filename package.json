@@ -1,6 +1,6 @@
 {
   "name": "i18n-messages-generator",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "i18n messages generator from languages files",
   "main": "dist/index.js",
   "keywords": ["18n"],

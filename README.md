@@ -1,5 +1,7 @@
 i18n-messages-generator
-=========================
+==================================================================================================
+[![npm](https://img.shields.io/npm/v/i18n-messages-generator.svg)](https://www.npmjs.com/package/i18n-messages-generator)
+[![npm](https://img.shields.io/npm/dt/i18n-messages-generator.svg)](https://www.npmjs.com/package/i18n-messages-generator)
 
 Generate i18n messages from lang folder
 
